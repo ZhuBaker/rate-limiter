@@ -53,3 +53,5 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 此次控制分布式瞬发限流的设计类似于 窗口最大请求数设计业务请求，不满足类似于Guava RateLimiter中的特性(**瞬发限流特性**)
 接下来将实现一种分布式 瞬发限流的实现 (令牌桶算法实现与RateLimiter类似，但基于分布式的实现)
 
+# Thanks For Stars
+
