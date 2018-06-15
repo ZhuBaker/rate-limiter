@@ -39,7 +39,10 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 
 
 ## 具体参考
+### 依赖项目：
+* [redis-client-common](https://github.com/ZhuBaker/redis-client-common)
 
+### 核心代码：
 * [SingleLockTest](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/lock/SingleLockTest.java)
 * [DistributedLockTest2](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/lock/DistributedLockTest2.java)
 * [LimiterTest](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/limiter/LimiterTest.java)
