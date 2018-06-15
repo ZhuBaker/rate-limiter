@@ -12,6 +12,7 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 即一个时间窗口内的请求数，如想限制某个接口/服务 每秒/每分钟/每天的 请求数/调用量。如一些基础服务会被很多其他系统调用，
 比如商品详情页服务会调用基础商品服务调用，但是怕因为更新量比较大，将基础服务打挂，这时我们需要对每秒/每分钟的调用量进行限速；
 
+
 ## 引用技术
 * Redis
 * Lua
@@ -47,5 +48,8 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 * [DistributedLockTest2](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/lock/DistributedLockTest2.java)
 * [LimiterTest](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/limiter/LimiterTest.java)
 
+# 缺陷
 
+此次控制分布式瞬发限流的设计类似于 窗口最大请求数设计业务请求，不满足类似于Guava RateLimiter中的特性(**瞬发限流特性**)
+接下来将实现一种分布式 瞬发限流的实现 (令牌桶算法实现与RateLimiter类似，但基于分布式的实现)
 
