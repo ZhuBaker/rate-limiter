@@ -23,6 +23,7 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 * 粒度小控制简单
 
 ## 核心类
+
 ### 锁控制： 单位时间窗口最大请求数
 * 单机锁控制
     * com.github.bakerzhu.common.ratelimiter.lock.SingleLock
@@ -35,6 +36,13 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 * 并发控制
     * com.github.bakerzhu.common.ratelimiter.limiter.DistributedLimiter
 
+
+
 ## 具体参考
+
+* [SingleLockTest](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/lock/SingleLockTest.java)
+* [DistributedLockTest2](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/lock/DistributedLockTest2.java)
+* [LimiterTest](https://github.com/ZhuBaker/rate-limiter/blob/master/src/test/java/com/github/bakerzhu/common/limiter/LimiterTest.java)
+
 
 
