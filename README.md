@@ -57,3 +57,7 @@ Guava RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBurst
 [distributed-current-limiter](https://github.com/ZhuBaker/distributed-current-limiter)
 # Thanks For Star
 
+> 搜索单元 
+> * 概念:用于搜索的“一个”逻辑单元,小括号括起,并且每个括号是一个field的比较
+> * 书写形式:(field:value)
+> * Note:(a:1)、(1&lt;a&lt;10) 、(a&gt;5&a&lt;10) 都是单个field的比较
